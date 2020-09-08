@@ -7,4 +7,5 @@ sudo npm install -y nodejs
 sudo npm install -y npm
 
 # install pulseaudio
-udo apt-get install pulseaudio
+sudo apt-get install -y pulseaudio
+sudo apt-get install -y pavucontrol
