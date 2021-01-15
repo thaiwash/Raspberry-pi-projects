@@ -1,0 +1,11 @@
+int pin = 11; 
+int val = 0; 
+void setup() {
+  pinMode(pin, INPUT);    // sets the digital pin 7 as input
+  Serial.begin(9600);
+}
+
+void loop() {
+  val = digitalRead(pin);   // read the input pin
+  Serial.println(val);
+}

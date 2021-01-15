@@ -1,0 +1,15 @@
+// Arduino UART Tutorial
+int UART_outByte = 0;
+
+void setup() {
+
+  Serial.begin(9600);       // initialize UART with baud rate of 9600 bps
+}
+
+void loop() {
+  //while (Serial.available() > 0) {
+  UART_outByte = Serial.read();
+  if (UART_outByte > 0){
+    Serial.println(sprintf("%s", UART_outByte));
+  }
+}

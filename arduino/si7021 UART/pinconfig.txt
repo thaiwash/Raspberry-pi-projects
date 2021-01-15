@@ -1,0 +1,3 @@
+VCC = 3.3v
+GND = GND
+TXD = RXD
